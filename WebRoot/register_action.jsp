@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		if(username==null||"".equals(username.trim())||password1==null
   		||"".equals(password1)||password2==null||"".equals(password2)||!password1.equals(password2)){
   			System.out.print("用户名或密码不能为空！");
-  			response.sendRedirect("register.jsp");
+  			response.sendRedirect("register.html");
   			return;
   		}
   		UserBean userbean=new UserBean();
@@ -40,12 +40,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		if(!isExit){
   			userbean.add(username, password1, email);
   			System.out.print("注册成功，请登陆！");
-  			response.sendRedirect("login.jsp");
+  			response.sendRedirect("login.html");
   			
   		}
   		else{
   			System.out.print("用户名已存在！");
-  			response.sendRedirect("register.jsp");
+  			response.sendRedirect("register.html");
   			
   		}
   	 %>

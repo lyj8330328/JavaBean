@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		String ps=request.getParameter("password");
    		if(us==null||"".equals(us.trim())||ps==null||"".equals(ps.trim())){
    			System.out.print("用户名或者密码不能为空!");
-   			response.sendRedirect("index.jsp");
+   			response.sendRedirect("login.html");
    			
    		}
  		
@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    		}
    		else{
    			System.out.print("用户名或者密码错误！");
-   			response.sendRedirect("login.jsp");
+   			response.sendRedirect("login.html");
    		}
    		
     %>

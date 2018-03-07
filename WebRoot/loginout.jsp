@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <%
     	session.removeAttribute("username");
-    	response.sendRedirect("login.jsp");
+    	response.sendRedirect("login.html");
      %>
   </body>
 </html>
